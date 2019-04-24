@@ -11,12 +11,13 @@ namespace Decifrandokinglon
             //Objeto representando o tipo Foo dos kinglons
             Foo f = new Foo();
 
-            //Objeto representando o alfabeto dos kinglons
+            //Objeto representando o alfabeto dos kinglons || Não consegui fazer funcionar.
             kinglonAlphabet ka = new kinglonAlphabet();
 
+            //Objeto representando o numero dos klingons
             KinglonNumbers kn = new KinglonNumbers();
 
-            string textB = System.IO.File.ReadAllText(@"INSIRA O CAMINHO DO SEU ARQUIVO DO TEXT B AQUI");
+            string textB = System.IO.File.ReadAllText(@"{insira o caminho do seu texto aqui}/kinglon-TextB.txt");
             string[] wordsTextB = textB.Split(' ');
 
             var numberOfPrepositionsTextB = f.howManyPrepositions(wordsTextB);
@@ -34,8 +35,6 @@ namespace Decifrandokinglon
             var numberOfBeatifulNumberInTextB = kn.HoyManyBeatifulNumbers(wordsTextB);
 
             Console.WriteLine("A quantidade de número bonitos do texto B é: " + numberOfBeatifulNumberInTextB);
-
-            Console.Read();
 
             Console.ReadLine();
         }
