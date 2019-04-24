@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Decifrandokinglon.Classes
+namespace DesafioKlingon360.Classes
 {
     public class KinglonNumbers
     {
@@ -22,7 +23,7 @@ namespace Decifrandokinglon.Classes
 
             foreach (var number in ListTextNumbers)
             {
-                if((number >= 440566) && (number%3 == 0))
+                if ((number >= 440566) && (number % 3 == 0))
                 {
                     beatifulNumber++;
                 }
@@ -33,9 +34,9 @@ namespace Decifrandokinglon.Classes
 
         private void convertToNumber(string word)
         {
-            long number=0;
+            long number = 0;
 
-            for (int i = word.Length-1; i >= 0; i--)
+            for (int i = word.Length - 1; i >= 0; i--)
             {
                 //Pega a posição (indice) da letra na string
                 int positionLetter = alphabetkinglon.IndexOf(word[i]);

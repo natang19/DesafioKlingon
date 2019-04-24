@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Decifrandokinglon.Classes
+namespace DesafioKlingon360.Classes
 {
     public class Foo
     {
         private string[] kinglonFoo = { "s", "l", "f", "w", "k" };
-        public int howManyPrepositions(string [] words)
+        public int howManyPrepositions(string[] words)
         {
-            int numberOfFoo=0;
+            int numberOfFoo = 0;
 
             foreach (string word in words)
             {
@@ -24,7 +26,7 @@ namespace Decifrandokinglon.Classes
             return numberOfFoo;
         }
 
-        public int howManyVerbs(string [] words)
+        public int howManyVerbs(string[] words)
         {
             int numberOfVerbs = 0;
 

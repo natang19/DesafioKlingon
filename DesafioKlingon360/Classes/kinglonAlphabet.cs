@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
-namespace Decifrandokinglon.Classes
+namespace DesafioKlingon360.Classes
 {
     public class kinglonAlphabet
     {
@@ -19,7 +19,7 @@ namespace Decifrandokinglon.Classes
             generateDictionarykinglonText(wordsWithoutRepetitions);
             var items = auxList.OrderBy(i => i.Key.Length);
 
-            string nomeArquivo = @"C:\Users\natan\source\repos\Decifrandokinglon\TextBOrdered.txt";
+            string nomeArquivo = @"C:/TextBOrdered.txt";
             StreamWriter writer = new StreamWriter(nomeArquivo);
 
             foreach (var item in items)
