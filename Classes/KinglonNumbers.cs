@@ -8,6 +8,7 @@ namespace Decifrandokinglon.Classes
     public class KinglonNumbers
     {
         List<long> ListTextNumbers = new List<long>();
+        /**Eu preferi usar o alfabeto klingon como string para facilitar a conversão para número tomando como base nos próprios indices de cada letra da string que representa o alfabeto klingon**/
         private string alphabetkinglon = "kbwrqdnfxjmlvhtcgzps";
 
         public int HoyManyBeatifulNumbers(string[] words)
@@ -36,7 +37,9 @@ namespace Decifrandokinglon.Classes
 
             for (int i = word.Length-1; i >= 0; i--)
             {
+                //Pega a posição (indice) da letra na string
                 int positionLetter = alphabetkinglon.IndexOf(word[i]);
+                //tranforma a letra em um número de acordo com a base klingon
                 number += Convert.ToInt64(positionLetter * Math.Pow(20, i));
             }
 
